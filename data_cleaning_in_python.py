@@ -6,7 +6,7 @@ df = pd.DataFrame({"Age" :[15,18,'18',19.4,"20+"],
                    "Gender":["male","female","female","female","male"]})
 df
 
-df.info()                 #will all datatypes & information about dataframe
+df.info()                 #will give all datatypes & information about dataframe
 -----------------------------------------------------------------------------------------------------
 
 ### Replace 
@@ -14,11 +14,7 @@ df.info()                 #will all datatypes & information about dataframe
 df["Age"]= df["Age"].replace({'20+':20, "18":18})
 df["Age"]
 -----------------------------------------------------------------------------------------------------------
-df1 = pd.DataFrame({"Age":[15,14,15,15,20],
-                   "Name":["Ks","vk","vs","ps","os"]})
-df1
 
------------------------------------------------------------------------------------------------------------
 """### Drop"""
 
 df3.drop(index=[1,3],inplace = True)
